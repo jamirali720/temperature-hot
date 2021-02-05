@@ -43,7 +43,7 @@
 
 
     button.addEventListener("click", function(){
-        fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=04f00756ca6c119511758114e9b6f61d')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&units=metric&appid=04f00756ca6c119511758114e9b6f61d')
         .then(response => response.json())
         .then(data => {
            const name = data.name;
